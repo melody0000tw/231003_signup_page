@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in & Sign up Page</title>
+     <!-- font awesome icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="231003_signup_style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <!-- sign up -->
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <div class="sign-up-input">
+                    <input type="email" class="sign-up-account" placeholder="Email" name="email"/>
+                    <input type="password" class="sign-up-password" placeholder="Password" />
+                </div>
+                <button class="form-sign-up-btn" value="sign-up">Sign Up</button>
+            </form>
+        </div>
+
+        <!-- sign in -->
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your account</span>
+                <div class="sign-in-input">
+                    <input type="email" class="sign-in-account" placeholder="Email" name="email"/>
+                    <input type="password" class="sign-in-password" placeholder="Password" />
+                </div>
+                <a href="#" class="forgot">Forgot your password?</a>
+                <button class="form-sign-in-btn" value="sign-in">Sign In</button>
+            </form>
+        </div>
+
+        <!-- overlay -->
+        <div class="overlay-container" id="overlayCon">
+            <div class="overlay overlay-welcome-back">
+                <div class="overlay-panel">
+                    <h1>Welcome Back!</h1>
+                    <p>Already have an account? <br>  Login with your personal info</p>
+                    <button class="overlay-sign-in-btn">Sign In</button>
+                </div>
+            </div>
+            <div class="overlay overlay-hello-friend">
+                <div class="overlay-panel">
+                    <h1>Hello, Friend!</h1>
+                    <p>Don't have an account? <br> Quickly sign up for free</p>
+                    <button class="overlay-sign-up-btn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- js code -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="231003_signup_js.js"></script>
+
+</body>
+</html>
